@@ -1,0 +1,84 @@
+:root{
+    --primary-color: #339989;
+    --text-color: #131515;
+    --muted-text: #495057;
+    --background: #FFFAFB;
+}
+body {
+    color:var(--muted-text);
+    background: var(--background);
+    margin:0;
+    font-family:sans-serif;
+  }
+  h1 {
+    font-size:64px;
+    line-height: 110%;
+    margin:0;
+  }
+  h2 {
+    font-size:56px;
+    line-height: 110%;
+    letter-spacing: -2%;
+    margin:0;
+  } 
+.navbar {
+    border-bottom: 0.2px solid var(--muted-text);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    align-items: center;
+    line-height: 0;
+  }
+  .logo i {
+    font-size:40px;
+    color:var(--primary-color);
+  }
+  .phone {
+    display: flex;
+    gap: 17px;
+    margin: auto 0;
+    align-items: center;
+  }
+  .phone-icon{
+    background: var(--primary-color);
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    position:relative;
+    line-height:50px;
+  }
+  .phone-icon i {
+    font-size:22px;
+    text-align: center;
+    color:var(--background);
+    position:absolute;
+    top:14px;
+    left:13px;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    line-height:0;
+  }
+  .consultations {
+    color: var(--muted-text);
+    font-size:14px;
+    text-transform: uppercase;
+  }
+  .phone-number {
+    color: var(--primary-color);
+    font-size:18px;
+    margin:10px 0;
+  }
+  .navbar-menu {
+    display:none;
+    color:#fff;
+  }

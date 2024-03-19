@@ -1,0 +1,19 @@
+@media(max-width:576px) {
+      h1 {
+        font-size:30px;
+      }
+      h2 {
+        font-size:40px;
+      } 
+      .logo p, .phone{
+        display:none;
+      }
+      .logo i {
+        font-size:40px;
+      }
+      .navbar-menu {
+        display:block;
+        font-size: 30px;
+        color:var(--muted-text);
+      }
+}
