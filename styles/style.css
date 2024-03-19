@@ -7,7 +7,6 @@
 body {
     color:var(--muted-text);
     background: var(--background);
-    margin:0;
     font-family:sans-serif;
   }
   h1 {
@@ -20,14 +19,17 @@ body {
     line-height: 110%;
     letter-spacing: -2%;
     margin:0;
-  } 
+  }
+  .content {
+    margin:0 175px;
+  }
 .navbar {
     border-bottom: 0.2px solid var(--muted-text);
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 175px;
   }
   .logo {
     display: flex;
@@ -81,4 +83,32 @@ body {
   .navbar-menu {
     display:none;
     color:#fff;
+  }
+  /* HERO */
+  .hero {
+    margin-top:80px;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .hero p{
+    font-size:22px;
+  }
+  .cta-button {
+    color:var(--background);
+    font-weight: bold;
+    font-size: 20px;
+    background: var(--primary-color);
+    padding:28px 48px;
+    text-decoration: none;
+    border-radius:22px;
+    border:none;
+    transition:200ms all ease-in-out;
+  }
+  .cta-button:hover {
+    background: #226359;
+    cursor:pointer;
+  }
+  .hero-doctors {
+    width:50%;
+    align-self:center;
   }
