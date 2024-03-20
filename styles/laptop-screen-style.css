@@ -37,4 +37,8 @@
         border-radius: 16px;
         width:210px;
       }
+
+      .action {
+        margin: 200px 200px 120px;
+      }
 }

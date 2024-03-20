@@ -47,4 +47,30 @@
         width:220px;
         
       }
+
+      .action {
+        margin: 100px 16px 40px;
+      }
+      .action h2{
+        margin-bottom:20px;
+      }
+      footer {
+        align-items: center;
+      }
+      .policy {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap:20px;
+        margin:0;
+        align-self: flex-end;
+        margin-bottom:14px;
+        color:rgba(0,0,0,0.4);
+      }
+      .policy p{
+        margin:3px 0;
+        line-height: 0;
+      }
+      footer .phone{
+        display:block;
+      }
 }
