@@ -2,15 +2,15 @@
     .content {
         margin:0 16px;
       }
+      .navbar {
+        padding:10px 16px;
+      }
       h1 {
         font-size:30px;
       }
       h2 {
         font-size:40px;
       } 
-      .navbar {
-        padding:10px 16px;
-      }
       .logo p, .phone{
         display:none;
       }
@@ -34,5 +34,12 @@
       }
       .hero-text {
         width:100%;
+      }
+      /*HOW DOES IT WORK*/
+      .how-it-works {
+        text-align: center;
+      }
+      .card {
+        width:280px;
       }
 }

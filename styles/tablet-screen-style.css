@@ -26,5 +26,11 @@
       .hero-doctors {
         width:90%;
       }
+      .card {
+        width:250px;
+      }
+      .how-it-works {
+        text-align: center;
+      }
 
 }

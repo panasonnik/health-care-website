@@ -20,6 +20,10 @@ body {
     letter-spacing: -2%;
     margin:0;
   }
+  h3 {
+    font-weight:bold;
+    line-height:0;
+  }
   .content {
     margin:0 175px;
   }
@@ -111,4 +115,29 @@ body {
   .hero-doctors {
     width:50%;
     align-self:center;
+  }
+
+  /*HOW DOES IT WORK section*/
+  .how-it-works {
+    margin-top:175px;
+  }
+  .how-it-works h2 {
+    margin-bottom: 40px;
+  }
+  .cards {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:20px;
+  }
+  .card {
+    width:230px;
+  } 
+  .card img {
+    padding: 30px 22px;
+    width:80%;
+    aspect-ratio: 1/1;
+    box-shadow: 4px 4px 3px rgba(51, 153, 137, 0.2);
+    border-radius: 22px;
+    background: #fff;
   }

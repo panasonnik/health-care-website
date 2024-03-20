@@ -19,5 +19,13 @@
       }
       .cta-button {
         padding: 20px 36px;
+        border-radius:16px;
+      }
+      .cards {
+        justify-content: center;
+        gap:16px;
+      } 
+      .card {
+        width:200px;
       }
 }
