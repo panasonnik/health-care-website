@@ -22,7 +22,6 @@ body {
   }
   h3 {
     font-weight:bold;
-    line-height:0;
   }
   .content {
     margin:0 175px;
@@ -140,4 +139,43 @@ body {
     box-shadow: 4px 4px 3px rgba(51, 153, 137, 0.2);
     border-radius: 22px;
     background: #fff;
+  }
+
+  /*WHY US*/
+  .why-us {
+    margin-top:375px;
+  }
+  .why-us h2 {
+    margin-bottom: 40px;
+  }
+  .cards-feature {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align:center;
+  }
+  .why-us .icon {
+    fill: var(--muted-text);
+    width:36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .why-us .icon-container {
+    width:84px;
+    height:84px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+  }
+  .card-feature {
+    padding: 67px 30px;
+    background: rgba(51, 153, 137, 0.2);
+    border-radius: 22px;
+    width:265px;
+  }
+  .card-feature h3 {
+    margin-top:50px;
   }

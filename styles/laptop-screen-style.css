@@ -28,4 +28,13 @@
       .card {
         width:200px;
       }
+
+      .why-us {
+        margin-top:30px;
+      }
+      .card-feature {
+        padding: 40px 30px;
+        border-radius: 16px;
+        width:210px;
+      }
 }

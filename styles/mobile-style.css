@@ -36,10 +36,15 @@
         width:100%;
       }
       /*HOW DOES IT WORK*/
-      .how-it-works {
-        text-align: center;
-      }
+
       .card {
         width:280px;
+      }
+
+      /*WHY US*/
+      .card-feature {
+        padding: 50px 20px;
+        width:220px;
+        
       }
 }

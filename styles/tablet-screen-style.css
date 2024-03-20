@@ -32,5 +32,30 @@
       .how-it-works {
         text-align: center;
       }
+      .why-us {
+        text-align:center;
+      }
+      .cards-feature {
+        gap:10px;
+      }
+      .card-feature {
+        padding: 40px;
+        border-radius: 16px;
+        width:130px;
+        
+      }
+      .card-feature p {
+        display:none;
+      }
+      .why-us .icon {
+        width:28px;
+      }
+      .why-us .icon-container {
+        width:60px;
+        height:60px;
+      }
+      .card-feature h3 {
+        margin-top:30px;
+      }
 
 }
