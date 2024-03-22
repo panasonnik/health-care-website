@@ -33,7 +33,7 @@ body {
   .content {
     margin:0 175px;
   }
-.navbar {
+  .navbar {
     border-bottom: 0.2px solid var(--muted-text);
     background-color: #fff;
     display: flex;
@@ -50,9 +50,9 @@ body {
     line-height: 0;
     text-transform: none;
   }
-  .navbar__logo i {
-    font-size:40px;
-    color:var(--primary-color);
+  .navbar__logo-icon {
+    width:40px;
+    fill:var(--primary-color);
   }
   .navbar__phone {
     display: flex;
@@ -60,7 +60,7 @@ body {
     margin: auto 0;
     align-items: center;
   }
-  .navbar__phone-icon{
+  .navbar__phone-icon-circle{
     background: var(--primary-color);
     border-radius:50%;
     width:50px;
@@ -68,10 +68,10 @@ body {
     position:relative;
     line-height:50px;
   }
-  .navbar__phone-icon i {
-    font-size:22px;
+  .navbar__phone-icon {
+    width:22px;
     text-align: center;
-    color:var(--background);
+    fill:var(--background);
     position:absolute;
     top:14px;
     left:13px;
@@ -91,7 +91,7 @@ body {
     font-size:18px;
     margin:10px 0;
   }
-  .navbar__menu {
+  .navbar__menu-icon {
     display:none;
     color:#fff;
   }
@@ -113,7 +113,7 @@ body {
   .hero p{
     font-size:22px;
   }
-  .hero__cta-button, .cards__cta-button {
+  .cta {
     color:var(--background);
     font-weight: bold;
     font-size: 18px;
@@ -124,23 +124,23 @@ body {
     border:none;
     transition:200ms all ease-in-out;
   }
-  .hero__cta-button:hover, .cards__cta-button:hover {
+  .cta:hover {
     background: #226359;
     cursor:pointer;
   }
-  .hero__doctors {
+  .hero__doctors-img {
     width:50%;
     align-self:center;
   }
 
   /*HOW DOES IT WORK section*/
-  .how-it-works {
+  .info {
     margin-top:175px;
   }
-  .how-it-works h2 {
+  .info h2 {
     margin-bottom: 40px;
   }
-  .cards {
+  .info__cards-container {
     /* display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly; */
@@ -156,7 +156,7 @@ body {
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center text */
   }
-  .card img {
+  .info__card-img {
     margin:0 auto;
     padding: 30px 22px;
     width:90%;
@@ -165,23 +165,19 @@ body {
     border-radius: 22px;
     background: #fff;
   }
-  .cards__cta-button {
-
-  }
-  /*WHY US*/
   .why-us {
     margin-top:375px;
   }
   .why-us h2 {
     margin-bottom: 40px;
   }
-  .cards-feature {
+  .why-us__cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Two cards per row on tablets and larger screens */
     gap: 20px;
     justify-items: center;
   }
-  .why-us .icon {
+  .why-us__icon {
     fill: var(--muted-text);
     width:36px;
     position: absolute;
@@ -189,7 +185,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .why-us .icon-container {
+  .why-us__icon-container {
     width:84px;
     height:84px;
     border-radius: 50%;
@@ -197,14 +193,14 @@ body {
     position: relative;
     margin: 0 auto;
   }
-  .card-feature {
+  .why-us__card {
     padding: 5vw 3vw;
     background: rgba(51, 153, 137, 0.2);
     border-radius: 22px;
     width: 100%;
     text-align:center;
   }
-  .card-feature h3 {
+  .why-us__card h3 {
     margin-top: 2vw; /* Adjust margin using vw units to maintain proportion relative to viewport width */
   }
 
@@ -219,11 +215,11 @@ body {
     margin-bottom:40px;
   }
 
-  .action form {
+  .action__form {
     display:flex;
     flex-direction: column;
   }
-  .action select, .action input {
+  .action__form-select, .action__submit {
     padding: 20px 25px;
     border-radius: 16px;
     font-size: 16px;
@@ -232,20 +228,20 @@ body {
     margin: 10px auto;
     background: rgba(51, 153, 137, 0.2);
   }
-  .action input {
+  .action__submit {
     color:var(--background);
     background: var(--primary-color);
     font-weight:bold;
   }
 
-  footer {
+  .footer {
     padding: 10px 0;
     display:flex;
     justify-content: space-evenly;
     background: rgba(51, 153, 137, 0.2);
     text-transform: none;
   }
-  .policy {
+  .footer__policy {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;

@@ -11,42 +11,42 @@
       h2 {
         font-size:40px;
       } 
-      .navbar__logo p, .navbar__phone{
+      .navbar__logo-text, .navbar__phone{
         display:none;
       }
-      .navbar__logo i {
+      .navbar__logo-icon {
         font-size:40px;
       }
-      .navbar__menu {
+      .navbar__menu-icon {
         display:block;
-        font-size: 30px;
-        color:var(--muted-text);
+        width: 30px;
+        fill:var(--muted-text);
       }
-/*HERO*/
+
       .hero {
         margin-top:50px;
       }
       .hero p{
         font-size:22px;
       }
-      .hero__doctors {
+      .hero__doctors-img {
         width:80%;
       }
-      .hero__text {
+      .hero__text-container {
         width:100%;
       }
       /*HOW DOES IT WORK*/
-      .cards {
+      .info__cards-container {
         gap: 6px;
       }
-      /*WHY US*/
-      .cards-feature {
+
+      .why-us__cards-container {
         grid-template-columns: repeat(1, 1fr); /* Two cards per row on tablets and larger screens */
         gap: 20px;
       }
-      .card-feature {
-        padding: 10vw 3vw;
-        width:80%;
+      .why-us__card {
+        padding:90px;
+        width:70%;
         aspect-ratio: 1/1;
       }
 
@@ -56,10 +56,10 @@
       .action h2{
         margin-bottom:20px;
       }
-      footer {
+      .footer {
         align-items: center;
       }
-      .policy {
+      .footer__policy {
         flex-direction: column;
         justify-content: space-evenly;
         gap:20px;
@@ -68,11 +68,11 @@
         margin-bottom:14px;
         color:rgba(0,0,0,0.4);
       }
-      .policy p{
+      .footer__policy p{
         margin:3px 0;
         line-height: 0;
       }
-      footer .phone{
+      .footer__contacts{
         display:block;
       }
 }

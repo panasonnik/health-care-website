@@ -11,7 +11,7 @@
     .navbar {
         padding:10px 40px;
       }
-    .navbar__logo i {
+    .navbar__logo-icon {
       font-size:40px;
     }
     .navbar__link-specialist {
@@ -26,42 +26,41 @@
       .hero p{
         font-size:22px;
       }
-      .hero__doctors {
+      .hero__doctors-img {
         width:90%;
       }
-
-      .cards {
+      .info{
+        text-align: center;
+      }
+      .info__cards-container {
         grid-template-columns: repeat(2, 1fr); /* Two cards per row on tablets and larger screens */
         gap: 16px;
       }
-      .how-it-works {
-        text-align: center;
-      }
       .why-us {
         text-align:center;
+        margin-top:100px;
       }
-      .cards-feature {
-    grid-template-columns: repeat(3, calc((100% - 40px) / 3)); /* Three cards per row with equal width */
-    gap:16px;
-  }
-      .card-feature {
+      .why-us__cards-container {
+        grid-template-columns: repeat(3, calc((100% - 40px) / 3)); /* Three cards per row with equal width */
+        gap:16px;
+      }
+      .why-us__card {
         padding: 5vw 1vw;
         border-radius: 16px;
       }
-      .features__details {
+      .why-us__card h3 {
+        margin-top:30px;
+      }
+      .why-us__card__feature-details {
         display:none;
       }
-      .why-us .icon {
+      .why-us__icon {
         width:28px;
       }
-      .why-us .icon-container {
+      .why-us__icon-container {
         width:60px;
         height:60px;
       }
-      .card-feature h3 {
-        margin-top:30px;
-      }
-
       .action {
         margin: 160px auto 80px;
       }
