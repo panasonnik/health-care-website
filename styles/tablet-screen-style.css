@@ -11,8 +11,11 @@
     .navbar {
         padding:10px 40px;
       }
-    .logo i {
+    .navbar__logo i {
       font-size:40px;
+    }
+    .navbar__link-specialist {
+      display:none;
     }
     /*HERO*/
     .hero {
@@ -23,11 +26,13 @@
       .hero p{
         font-size:22px;
       }
-      .hero-doctors {
+      .hero__doctors {
         width:90%;
       }
-      .card {
-        width:250px;
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on tablets and larger screens */
+        gap: 16px;
       }
       .how-it-works {
         text-align: center;
@@ -36,15 +41,14 @@
         text-align:center;
       }
       .cards-feature {
-        gap:10px;
-      }
+    grid-template-columns: repeat(3, calc((100% - 40px) / 3)); /* Three cards per row with equal width */
+    gap:16px;
+  }
       .card-feature {
-        padding: 40px;
+        padding: 5vw 1vw;
         border-radius: 16px;
-        width:130px;
-        
       }
-      .card-feature p {
+      .features__details {
         display:none;
       }
       .why-us .icon {
@@ -59,7 +63,7 @@
       }
 
       .action {
-        margin: 160px 100px 80px;
+        margin: 160px auto 80px;
       }
 
 }

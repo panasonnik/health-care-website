@@ -4,6 +4,9 @@
     --muted-text: #495057;
     --background: #FFFAFB;
 }
+*{
+  box-sizing:border-box;
+}
 body {
     color:var(--muted-text);
     background: var(--background);
@@ -26,6 +29,7 @@ body {
   h3 {
     font-weight:bold;
   }
+  
   .content {
     margin:0 175px;
   }
@@ -38,7 +42,7 @@ body {
     padding: 10px 175px;
     text-transform: uppercase;
   }
-  .logo {
+  .navbar__logo {
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -46,17 +50,17 @@ body {
     line-height: 0;
     text-transform: none;
   }
-  .logo i {
+  .navbar__logo i {
     font-size:40px;
     color:var(--primary-color);
   }
-  .phone {
+  .navbar__phone {
     display: flex;
     gap: 17px;
     margin: auto 0;
     align-items: center;
   }
-  .phone-icon{
+  .navbar__phone-icon{
     background: var(--primary-color);
     border-radius:50%;
     width:50px;
@@ -64,7 +68,7 @@ body {
     position:relative;
     line-height:50px;
   }
-  .phone-icon i {
+  .navbar__phone-icon i {
     font-size:22px;
     text-align: center;
     color:var(--background);
@@ -72,24 +76,33 @@ body {
     top:14px;
     left:13px;
   }
-  .contact-details {
+  .navbar__contact {
     display: flex;
     flex-direction: column;
 
     line-height:0;
   }
-  .consultations {
+  .navbar__consultations {
     color: var(--muted-text);
     font-size:14px;
   }
-  .phone-number {
+  .navbar__phone-number {
     color: var(--primary-color);
     font-size:18px;
     margin:10px 0;
   }
-  .navbar-menu {
+  .navbar__menu {
     display:none;
     color:#fff;
+  }
+  .navbar__link-specialist {
+    text-decoration: none;
+    text-transform: none;
+    color:var(--muted-text);
+    transition: 200ms all ease-in-out;
+  }
+  .navbar__link-specialist:hover{
+    color:var(--text-color);
   }
   /* HERO */
   .hero {
@@ -100,22 +113,22 @@ body {
   .hero p{
     font-size:22px;
   }
-  .cta-button {
+  .hero__cta-button, .cards__cta-button {
     color:var(--background);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     background: var(--primary-color);
-    padding:28px 48px;
+    padding:12px 24px;
     text-decoration: none;
-    border-radius:22px;
+    border-radius:16px;
     border:none;
     transition:200ms all ease-in-out;
   }
-  .cta-button:hover {
+  .hero__cta-button:hover, .cards__cta-button:hover {
     background: #226359;
     cursor:pointer;
   }
-  .hero-doctors {
+  .hero__doctors {
     width:50%;
     align-self:center;
   }
@@ -128,23 +141,33 @@ body {
     margin-bottom: 40px;
   }
   .cards {
-    display:flex;
+    /* display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap:20px;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Two cards per row on tablets and larger screens */
+    gap: 20px;
+    justify-items: center;
   }
-  .card {
-    width:230px;
-  } 
+  .card-feature {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+  }
   .card img {
+    margin:0 auto;
     padding: 30px 22px;
-    width:80%;
+    width:90%;
     aspect-ratio: 1/1;
     box-shadow: 4px 4px 3px rgba(51, 153, 137, 0.2);
     border-radius: 22px;
     background: #fff;
   }
+  .cards__cta-button {
 
+  }
   /*WHY US*/
   .why-us {
     margin-top:375px;
@@ -153,10 +176,10 @@ body {
     margin-bottom: 40px;
   }
   .cards-feature {
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two cards per row on tablets and larger screens */
+    gap: 20px;
+    justify-items: center;
   }
   .why-us .icon {
     fill: var(--muted-text);
@@ -175,20 +198,22 @@ body {
     margin: 0 auto;
   }
   .card-feature {
-    padding: 67px 30px;
+    padding: 5vw 3vw;
     background: rgba(51, 153, 137, 0.2);
     border-radius: 22px;
-    width: 300px;
+    width: 100%;
+    text-align:center;
   }
   .card-feature h3 {
-    margin-top:50px;
+    margin-top: 2vw; /* Adjust margin using vw units to maintain proportion relative to viewport width */
   }
 
 
   /*ACTION*/
   .action {
     text-align:center;
-    margin: 300px 300px 160px;
+    margin: 200px auto 100px;
+    max-width:60%;
   }
   .action h2 {
     margin-bottom:40px;

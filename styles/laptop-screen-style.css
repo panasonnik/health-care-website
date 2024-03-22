@@ -14,31 +14,22 @@
       .hero p{
         font-size:22px;
       }
-      .hero-text {
+      .hero__text {
         margin-top:30px;
       }
-      .cta-button {
+      .hero__cta-button {
         padding: 20px 36px;
         border-radius:16px;
-      }
-      .cards {
-        justify-content: center;
-        gap:16px;
-      } 
-      .card {
-        width:200px;
       }
 
       .why-us {
         margin-top:30px;
       }
+      .cards-feature {
+        gap:10px;
+      }
       .card-feature {
         padding: 40px 30px;
         border-radius: 16px;
-        width:210px;
-      }
-
-      .action {
-        margin: 200px 200px 120px;
       }
 }

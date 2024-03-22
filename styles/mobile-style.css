@@ -11,13 +11,13 @@
       h2 {
         font-size:40px;
       } 
-      .logo p, .phone{
+      .navbar__logo p, .navbar__phone{
         display:none;
       }
-      .logo i {
+      .navbar__logo i {
         font-size:40px;
       }
-      .navbar-menu {
+      .navbar__menu {
         display:block;
         font-size: 30px;
         color:var(--muted-text);
@@ -29,27 +29,29 @@
       .hero p{
         font-size:22px;
       }
-      .hero-doctors {
+      .hero__doctors {
         width:80%;
       }
-      .hero-text {
+      .hero__text {
         width:100%;
       }
       /*HOW DOES IT WORK*/
-
-      .card {
-        width:280px;
+      .cards {
+        gap: 6px;
       }
-
       /*WHY US*/
+      .cards-feature {
+        grid-template-columns: repeat(1, 1fr); /* Two cards per row on tablets and larger screens */
+        gap: 20px;
+      }
       .card-feature {
-        padding: 50px 20px;
-        width:220px;
-        
+        padding: 10vw 3vw;
+        width:80%;
+        aspect-ratio: 1/1;
       }
 
       .action {
-        margin: 100px 16px 40px;
+        margin: 100px auto 40px;
       }
       .action h2{
         margin-bottom:20px;
