@@ -71,6 +71,7 @@
       }
       .footer__contacts-container {
         gap:20px;
+        font-size:14px;
       }
       .footer__policy {
         gap:20px;
