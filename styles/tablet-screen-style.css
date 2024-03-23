@@ -58,6 +58,9 @@
       .why-us__card__feature-details {
         display:none;
       }
+      .why-us__card__shortened-details{
+        display:block;
+      }
       .why-us__icon {
         width:28px;
       }
@@ -76,5 +79,6 @@
       .footer__policy {
         gap:20px;
       }
+
 
 }
