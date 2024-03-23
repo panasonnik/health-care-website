@@ -17,12 +17,9 @@
   .hero__text-container {
     margin-top:30px;
   }
-  .cta {
-    padding: 20px 36px;
-    border-radius:16px;
-  }
+
   .why-us {
-    margin-top:30px;
+    margin-top:150px;
   }
   .why-us__cards-container {
     gap:10px;

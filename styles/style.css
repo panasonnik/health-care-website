@@ -123,6 +123,7 @@ body {
     border-radius:16px;
     border:none;
     transition:200ms all ease-in-out;
+
   }
   .cta:hover {
     background: #226359;
@@ -237,14 +238,18 @@ body {
   .footer {
     padding: 10px 0;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items:center;
     background: rgba(51, 153, 137, 0.2);
     text-transform: none;
+  }
+  .footer__contacts-container {
+    display:flex;
+    gap:50px;
   }
   .footer__policy {
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
     gap:50px;
     margin-top:36px;
   }

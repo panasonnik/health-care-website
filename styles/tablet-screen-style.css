@@ -29,6 +29,10 @@
       .hero__doctors-img {
         width:90%;
       }
+      .cta {
+        padding:20px 48px;
+        margin-top:20px;
+      }
       .info{
         text-align: center;
       }
@@ -63,6 +67,13 @@
       }
       .action {
         margin: 160px auto 80px;
+        max-width:80%;
+      }
+      .footer__contacts-container {
+        gap:20px;
+      }
+      .footer__policy {
+        gap:20px;
       }
 
 }
