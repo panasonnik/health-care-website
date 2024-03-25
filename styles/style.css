@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
@@ -16,6 +17,9 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
   }
+  h1,h2 {
+    color:var(--text-color);
+  }
   h1 {
     font-size:64px;
     line-height: 110%;
@@ -33,6 +37,7 @@ body {
   }
   h3 {
     font-weight:bold;
+    font-size:21px;
   }
   
   .content {
@@ -95,6 +100,7 @@ body {
     font-size:18px;
     margin:10px 0;
     text-transform: lowercase;
+    text-decoration: none;
   }
   .navbar__menu-icon {
     display:none;
@@ -115,6 +121,7 @@ body {
     display:flex;
     justify-content: space-evenly;
     align-items: baseline;
+    gap:20px;
   }
   .hero p{
     font-size:22px;
@@ -153,21 +160,31 @@ body {
     gap: 20px;
     justify-items: center;
   }
-  .card-feature {
+  /* .card-feature {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+  } */
+
   .info__card-img {
     margin:0 auto;
     padding: 30px 22px;
-    width:90%;
+    width:100%;
     aspect-ratio: 1/1;
     box-shadow: 4px 4px 3px var(--primary-color-light);
     border-radius: 22px;
     background: #fff;
+  }
+  .info__card h3{
+    margin:0;
+    margin-top:16px;
+  }
+  .info__card-desc {
+    font-size:21px;
+    margin-top:6px;
+    color:var(--text-color);
   }
   .why-us {
     margin-top:375px;
@@ -180,6 +197,11 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
+    display:flex;
+  }
+  .why-us__card__feature-details {
+    margin:0;
+    font-size:16px;
   }
   .why-us__icon {
     fill: var(--muted-text);
@@ -198,25 +220,24 @@ body {
     margin: 0 auto;
   }
   .why-us__card {
-    padding: 5vw 3vw;
-    background: var(--primary-color-light);
+    background: #d6e7e4;
     border-radius: 22px;
     width: 100%;
+    aspect-ratio:1/1;
+    padding:52px 35px 42px;
     text-align:center;
+    flex-grow: 1;
   }
   .why-us__card h3 {
-    margin-top: 2vw;
+    margin: 24px 0 12px;
+    font-size:22px;
   }
   .why-us__card__shortened-details {
-    display:none;
-  }
-  .why-us__card__shortened-details{
     display:none;
   }
   .action {
     text-align:center;
     margin: 200px auto 100px;
-    max-width:50%;
   }
   .action h2 {
     margin-bottom:40px;
@@ -227,31 +248,43 @@ body {
     flex-direction: column;
   }
   .action__form-select, .action__submit {
-    padding: 20px 25px;
+    padding: 22px 25px;
     border-radius: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border:none;
-    width: 80%;
-    margin: 10px auto;
+    width: 535px;
+    height:74px;
+    margin: 15px auto;
     background: var(--primary-color-light);
   }
   .action__submit {
     color:var(--background);
     background: var(--primary-color);
     font-weight:bold;
+    font-size:24px;
   }
 
   .footer {
-    padding: 10px 0;
+    height:178px;
+    padding:53px 175px;
     display:flex;
     justify-content: space-around;
     align-items:center;
     background: var(--primary-color-light);
     text-transform: none;
   }
+  .footer .navbar__logo-icon {
+    width:50px;
+  }
+  .footer .navbar__logo-text {
+    font-size:16px;
+  }
   .footer__contacts-container {
     display:flex;
     gap:50px;
+    text-decoration:none;
+    line-height:normal;
+    align-items:end;
   }
   .footer__policy {
     display:flex;
@@ -266,4 +299,12 @@ body {
   }
   .footer__gmail {
     color:var(--text-color);
+    line-height:normal;
+  }
+  .footer .navbar__phone-number {
+    font-weight:600;
+    text-transform: uppercase;
+  }
+  .footer__contacts {
+    gap:8px;
   }

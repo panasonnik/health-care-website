@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage | Health Care</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/laptop-screen-style.css" />
     <link rel="stylesheet" href="styles/tablet-screen-style.css" />
     <link rel="stylesheet" href="styles/mobile-style.css" />
     <script
@@ -54,7 +53,7 @@
         </div>
         <div class="navbar__contact">
           <p class="navbar__consultations">Free consultations</p>
-          <p class="navbar__phone-number">+xx (xxx) xxx-xx-xx</p>
+          <a href="#" class="navbar__phone-number">+xx (xxx) xxx-xx-xx</a>
         </div>
       </div>
     </div>
@@ -76,28 +75,33 @@
           class="hero__doctors-img"
         />
       </div>
+
       <div class="info">
         <h2>How does it work?</h2>
         <div class="info__cards-container">
           <div class="info__card">
             <img src="icons/medical-care.svg" class="info__card-img" alt="" />
             <h3>Step 1</h3>
-            <p>Choose your specialty</p>
+            <p class="info__card-desc">Choose your specialty</p>
           </div>
           <div class="info__card">
             <img src="icons/location.svg" class="info__card-img" alt="" />
             <h3>Step 2</h3>
-            <p>Specify the location</p>
+            <p class="info__card-desc">Specify the location</p>
           </div>
           <div class="info__card">
             <img src="icons/filter.svg" class="info__card-img" alt="" />
             <h3>Step 3</h3>
-            <p>Filter you search based on your preferences</p>
+            <p class="info__card-desc">
+              Filter you search based on your preferences
+            </p>
           </div>
           <div class="info__card">
             <img src="icons/doctors.svg" class="info__card-img" alt="" />
             <h3>Step 4</h3>
-            <p>Explore health care providers’ profiles</p>
+            <p class="info__card-desc">
+              Explore health care providers’ profiles
+            </p>
           </div>
         </div>
         <button class="cta">Find your health care provider</button>
@@ -204,14 +208,14 @@
       </div>
       <div class="footer__contacts-container">
         <div class="footer__policy">
-          <p>Privacy policy</p>
-          <p>Terms of service</p>
+          <a>Privacy policy</a>
+          <a>Terms of service</a>
         </div>
         <div class="footer__contacts navbar__phone">
           <div class="navbar__contact">
             <p>Contact</p>
-            <p class="navbar__phone-number">+xx (xxx) xxx-xx-xx</p>
-            <p class="footer__gmail">health.now@gmail.com</p>
+            <a class="navbar__phone-number">+xx (xxx) xxx-xx-xx</a>
+            <a class="footer__gmail">health.now@gmail.com</a>
           </div>
         </div>
       </div>

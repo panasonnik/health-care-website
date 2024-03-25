@@ -1,98 +1,96 @@
-@media(max-width:576px) {
+@media(max-width:600px) {
     .content {
         margin:0 16px;
       }
-      .navbar {
-        padding:10px 16px;
-      }
+
       h1 {
         font-size:40px;
       }
       h2 {
         font-size:30px;
       } 
-      .navbar__logo-text, .navbar__phone{
-        display:none;
-      }
-      .navbar__logo-icon {
-        width:40px;
-      }
-      .navbar__menu-icon {
-        display:block;
-        width: 30px;
-        fill:var(--muted-text);
-      }
-
+      
       .hero {
-        margin-top:50px;
+        margin:0;
+        margin: 50px auto 0;
+        width: 358px;
+      }
+      .hero__doctors-img {
+        width:300px;
+      }
+      .hero__info {
+        font-size:20px;
       }
       .hero p{
         font-size:22px;
-      }
-      .hero__doctors-img {
-        width:80%;
       }
       .hero__text-container {
         width:100%;
       }
       .cta {
-        padding:14px 20px;
+        padding:16px;
+        border-radius: 16px;
         width:100%;
         font-size: 18px;
       }
       /*HOW DOES IT WORK*/
+      .info{
+        margin:0;
+        margin-top:120px;
+      }
+
       .info__cards-container {
         gap: 6px;
       }
-
+      .info__card-desc {
+        font-size:18px;
+      }
       .why-us__cards-container {
-        grid-template-columns: repeat(1, 1fr); /* Two cards per row on tablets and larger screens */
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+        display:block;
       }
       .why-us__card {
-        padding:70px 30px;
-        width:80%;
+        padding:50px 30px;
         aspect-ratio: 1/1;
+        width: 64%;
+        margin:10px auto;
       }
-
       .action {
-        margin: 100px auto 40px;
+        margin: 100px auto 107px;
         max-width:100%;
       }
       .action h2{
         margin-bottom:20px;
       }
       .action__form-select, .action__submit {
-        padding: 10px 15px;
+        padding: 11px 20px;
         border-radius: 10px;
         font-size: 14px;
+        width:298px;
+        height:41px;  
+        margin:8px auto;
       }
-      .footer {
-        align-items: center;
-        font-size:14px;
-        align-items: start;
-      }
-      .footer .navbar__logo-text {
-        display:block;
-        font-size:14px;
-      }
-      .footer__contacts-container {
-        display:flex;
-        flex-direction: column-reverse;
-        text-align:right;
-        gap:16px;
-      }
-      .footer__policy {
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap:0;
-        margin:0;
-        align-self: flex-end;
-        color:var(--muted-text);
-      }
+      
+}
 
-      .footer__contacts{
-        display:block;
-      }
-    }
-  
+@media(max-width:676px) {
+  .navbar {
+    padding:10px 16px;
+  }
+  .navbar__logo-text, .navbar__phone{
+    display:none;
+  }
+  .navbar__logo-icon {
+    width:40px;
+  }
+  .navbar__menu-icon {
+    display:block;
+    width: 33px;
+    aspect-ratio:1/1;
+    fill:var(--muted-text);
+  }
+  .footer .navbar__phone {
+    display:block;
+  }
+}
