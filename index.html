@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/initial-layout.css" />
     <link rel="stylesheet" href="styles/navbar-style.css" />
     <link rel="stylesheet" href="styles/footer-style.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/landing/style.css" />
     <link rel="stylesheet" href="styles/tablet-screen-style.css" />
     <link rel="stylesheet" href="styles/mobile-style.css" />
     <script
@@ -16,10 +16,10 @@
     ></script>
   </head>
   <body>
-    <div class="navbar">
-      <div class="navbar__logo">
+    <nav class="navbar">
+      <div class="navbar__logo logo">
         <svg
-          class="navbar__logo-icon"
+          class="navbar__logo-icon logo-icon"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
@@ -28,7 +28,7 @@
             d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31H476.3c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9v-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1v5.8c0 16.9-2.8 33.5-8.3 49.1z"
           />
         </svg>
-        <p class="navbar__logo-text">Find doctors nearby</p>
+        <p class="navbar__logo-text logo-text">Find doctors nearby</p>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -59,28 +59,24 @@
           <a href="#" class="navbar__phone-number">+xx (xxx) xxx-xx-xx</a>
         </div>
       </div>
-    </div>
+    </nav>
 
     <div class="content">
-      <div class="hero">
-        <div class="hero__text-container">
-          <h1>Find quality health care nearby</h1>
-          <div class="hero__info">
-            <p>Find top-rated doctors and specialists near you.</p>
-            <button class="hero__cta-button cta">
-              Discover care providers
-            </button>
-          </div>
-        </div>
+      <section class="hero">
         <img
           src="icons/doctors-hero.svg"
           alt="Doctors"
           class="hero__doctors-img"
         />
-      </div>
+        <h1 class="heading">Find quality health care nearby</h1>
+        <div class="hero__info">
+          <p>Find top-rated doctors and specialists near you.</p>
+          <a href="#" class="hero__cta-button cta">Discover care providers</a>
+        </div>
+      </section>
 
-      <div class="info">
-        <h2>How does it work?</h2>
+      <section class="info">
+        <h2 class="subheading">How does it work?</h2>
         <div class="info__cards-container">
           <div class="info__card">
             <img src="icons/medical-care.svg" class="info__card-img" alt="" />
@@ -107,9 +103,9 @@
             </p>
           </div>
         </div>
-        <button class="cta">Find your health care provider</button>
-      </div>
-      <div class="why-us">
+        <a class="cta">Find your health care provider</a>
+      </section>
+      <section class="why-us">
         <h2>Why us?</h2>
         <div class="why-us__cards-container">
           <div class="why-us__card">
@@ -125,7 +121,7 @@
                 />
               </svg>
             </div>
-            <h3>Comprehensive directory</h3>
+            <h3 class="why-us__title">Comprehensive directory</h3>
             <p class="why-us__card__feature-details">
               Our healthcare services directory provides a wide range of medical
               care options within your specific region.
@@ -145,7 +141,7 @@
                 />
               </svg>
             </div>
-            <h3>Verified information</h3>
+            <h3 class="why-us__title">Verified information</h3>
             <p class="why-us__card__feature-details">
               We verify and update listings regularly to provide the most
               up-to-date information about healthcare providers, services, and
@@ -166,7 +162,7 @@
                 />
               </svg>
             </div>
-            <h3>Easy-to-use</h3>
+            <h3 class="why-us__title">Easy-to-use</h3>
             <p class="why-us__card__feature-details">
               An intuitive interface allows visitors to easily navigate through
               the directory and find the healthcare services they need quickly
@@ -175,28 +171,36 @@
             <p class="why-us__card__shortened-details">Learn more</p>
           </div>
         </div>
-      </div>
-      <div class="action">
-        <h2>Find your health care provider now!</h2>
+      </section>
+      <section class="action">
+        <h2 class="subheading">Find your health care provider now!</h2>
         <form action="/submit" method="post" class="action__form">
-          <select id="services" name="services" class="action__form-select">
+          <select
+            id="services"
+            name="services"
+            class="action__form-select form-select"
+          >
             <option value="" disabled selected>Service</option>
             <option value="dentist">Dentist</option>
             <option value="physician">Physician</option>
             <option value="cosmetologist">Cosmetologist</option>
           </select>
-          <select id="locations" name="locations" class="action__form-select">
+          <select
+            id="locations"
+            name="locations"
+            class="action__form-select form-select"
+          >
             <option value="" disabled selected>Location</option>
             <option value="germany">Germany</option>
             <option value="austria">Austria</option>
             <option value="italy">Italy</option>
           </select>
-          <input type="submit" value="Find" class="action__submit" />
+          <input type="submit" value="Find" class="action__submit cta" />
         </form>
-      </div>
+      </section>
     </div>
-    <div class="footer">
-      <div class="navbar__logo">
+    <footer class="footer">
+      <div class="logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="navbar__logo-icon"
@@ -207,7 +211,7 @@
             d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31H476.3c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9v-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1v5.8c0 16.9-2.8 33.5-8.3 49.1z"
           />
         </svg>
-        <p class="navbar__logo-text">Find doctors nearby</p>
+        <p class="logo-text">Find doctors nearby</p>
       </div>
       <div class="footer__contacts-container">
         <div class="footer__policy">
@@ -215,13 +219,13 @@
           <a>Terms of service</a>
         </div>
         <div class="footer__contacts navbar__phone">
-          <div class="navbar__contact">
+          <div class="footer__contact">
             <p>Contact</p>
-            <a class="navbar__phone-number">+xx (xxx) xxx-xx-xx</a>
+            <a class="footer__phone-number">+xx (xxx) xxx-xx-xx</a>
             <a class="footer__gmail">health.now@gmail.com</a>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
