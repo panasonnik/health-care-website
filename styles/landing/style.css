@@ -148,6 +148,9 @@
 .info {
   margin-bottom: 417px;
 }
+.info .subheading {
+  margin-bottom: 30px;
+}
 .info__cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

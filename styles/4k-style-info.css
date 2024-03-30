@@ -23,8 +23,9 @@
   .navbar__phone-icon {
     width: 36px;
     height: 36px;
-    left: 18px;
-    top: 17px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .navbar__consultations {
     font-size: 24px;
