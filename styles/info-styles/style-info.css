@@ -7,6 +7,11 @@
   --background: #FFFAFB;
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
 .search-container {
   margin: 95px auto;
 }

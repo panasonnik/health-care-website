@@ -7,6 +7,10 @@
     --muted-text: #495057;
     --background: #FFFAFB;
 }
+a {
+    color:var(--text-color);
+    text-decoration: underline;
+}
 .search-container {
     margin: 95px auto;
     h2 {

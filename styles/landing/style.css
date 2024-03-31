@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .content {
   margin: 0 175px;
   background-color: var(--background);
